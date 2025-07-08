@@ -14,5 +14,3 @@ function climbingStairs(n) {
 
     return always
 }
-
-console.log(climbingStairs(4))

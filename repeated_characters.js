@@ -1,9 +1,9 @@
 function mostRepeatedChar(string) {
     
-    let alphabets = string.replace(/[^a-zA-Z]/g, '')
+    let alphabates = string.replace(/[^a-zA-Z]/g, '')
 
     let freqMap = {}
-    for(let char of alphabets) {
+    for(let char of alphabates) {
         freqMap[char] = (freqMap[char] || 0) + 1
     }
 
@@ -45,16 +45,16 @@ console.log(mostRepeatedChar(s1))
 
 // function mostFrequentCharacter(s) {
 //     debugger
-    // Filter out non-alphabet characters
+//     // Filter out non-alphabet characters
 //     const filteredString = s.replace(/[^a-zA-Z]/g, '');
     
-    // Create a frequency map
+//     // Create a frequency map
 //     const frequencyMap = {};
 //     for (let char of filteredString) {
 //         frequencyMap[char] = (frequencyMap[char] || 0) + 1;
 //     }
     
-    // Find the most frequent character
+//     // Find the most frequent character
 //     let mostFrequentChar = '';
 //     let maxFrequency = 0;
 //     for (let char in frequencyMap) {
@@ -67,11 +67,11 @@ console.log(mostRepeatedChar(s1))
 //     return mostFrequentChar;
 // }
 
-// Example 1
+// // Example 1
 // const s1 = 'abcddefda1111133333333';
 // console.log(mostFrequentCharacter(s1));  // Output: 'd'
 
-// Example 2
-// const s2 = 'AA0AB0BB0ccc0aa0aw00wo0BBBw123123';
+// // Example 2
+// // const s2 = 'AA0AB0BB0ccc0aa0aw00wo0BBBw123123';
 // const s2 = 'AA0AAB0BB0ccc0aa0aw00wo0BBBAAw123123';
 // console.log(mostFrequentCharacter(s2));  // Output: 'B'
